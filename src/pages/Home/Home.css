@@ -1,0 +1,49 @@
+.search-form {
+  padding: 10px 10px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.search-form form {
+  margin: 10px;
+  display: flex;
+}
+
+.search-form Texfield {
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.search-form button {
+  padding: 10px 10px;
+  margin: 0 5px;
+  color: white;
+}
+
+/* pagination */
+
+.more-options {
+  margin-left: 45px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.more-options select,
+.pagination button {
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.pagination button {
+  background-color: rgb(255, 252, 252);
+  color: black;
+  margin: 0 5px;
+}

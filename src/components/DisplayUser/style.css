@@ -1,0 +1,16 @@
+.wrapper {
+  width: 300px;
+  margin: 15px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.img-content {
+  width: 300px;
+  height: 200px;
+}
+
+#profile {
+  color: aqua;
+  text-decoration: none;
+}

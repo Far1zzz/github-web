@@ -1,0 +1,49 @@
+.userInformation {
+  background-color: rgb(155, 155, 155);
+  padding: 25px 25px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  border-radius: 15px;
+}
+
+.userInformation image {
+  width: 30%;
+  margin-right: 30px;
+}
+
+.userInformation .image img {
+  width: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.userContent {
+  padding: 5px;
+}
+
+.moreData {
+  font-size: 13px;
+  font-weight: 100;
+}
+.moreData p {
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.moreData img {
+  width: 15px;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containers {
+  text-align: center;
+}
