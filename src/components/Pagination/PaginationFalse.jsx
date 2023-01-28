@@ -8,7 +8,7 @@ const darkTheme = createTheme({
   },
 });
 
-const Paging = ({ setPage, numOfPages = 10 }) => {
+const Paging = ({ setPage, numOfPages = 1 }) => {
   const handleChange = (page) => {
     setPage(page);
     window.scroll(0, 0);

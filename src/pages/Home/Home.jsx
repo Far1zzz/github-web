@@ -101,19 +101,20 @@ const Home = () => {
             </div>
           </form>
         </div>
-        <div className="search-result">
-          <div className="container">
-            {users ? (
-              users.map((user) => {
-                return <DisplayUser user={user} key={user.id} />;
-              })
-            ) : (
-              <h2>Data Undifined</h2>
-            )}
-          </div>
-        </div>
-        {users.length ? <Pagination setPage={setPage} /> : null}
       </div>
+
+      <div className="search-result">
+        <div className="container">
+          {users ? (
+            users.map((user) => {
+              return <DisplayUser user={user} key={user.id} />;
+            })
+          ) : (
+            <h2>Data Undifined</h2>
+          )}
+        </div>
+      </div>
+      {users.length ? <Pagination setPage={setPage} /> : null}
     </ThemeProvider>
   );
 };
