@@ -1,20 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
-import CardContent from "@mui/material/CardContent";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Avatar from "@mui/material/Avatar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { useParams, Link } from "react-router-dom";
-import { Button } from "@mui/material";
-import user from "../../assets/user.svg";
-import location from "../../assets/lokasi.svg";
-import site from "../../assets/site.svg";
-import github from "../../assets/github.svg";
-import Pagination from "../../components/Pagination/Pagination";
-import PaginationFalse from "../../components/Pagination/PaginationFalse";
 
 const darkTheme = createTheme({
   palette: {

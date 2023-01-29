@@ -44,7 +44,6 @@ const ModalContent = ({ children }) => {
           },
         }
       );
-      console.log(data);
       setFollowers(data);
     } catch (error) {
       console.error(error);
@@ -54,8 +53,6 @@ const ModalContent = ({ children }) => {
   useEffect(() => {
     fetchFollower();
   }, [page, limit]);
-
-  console.log({ data: followers });
 
   return (
     <div>

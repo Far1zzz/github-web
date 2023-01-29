@@ -27,7 +27,6 @@ const Paging = ({ setPage, numOfPages = 1 }) => {
         <Pagination
           variant="outlined"
           shape="rounded"
-          count={numOfPages}
           onChange={(e) => handleChange(e.target.textContent)}
           color="primary"
           hideNextButton

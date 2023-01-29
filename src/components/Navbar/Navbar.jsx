@@ -33,10 +33,7 @@ const Navbar = () => {
                 sx={{ mr: 2 }}
               ></GitHubIcon>
 
-              <Typography
-                variant="h6"
-                sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-              >
+              <Typography variant="h6" sx={{ flexGrow: 1 }}>
                 {" "}
                 GithubSearch
               </Typography>
