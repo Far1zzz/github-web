@@ -85,7 +85,7 @@ const Profile = () => {
               Back
             </Button>
           </div>
-          <Card className="cardContent" sx={{ width: 350 }}>
+          <Card className="cardContent" sx={{ width: 375 }}>
             <CardHeader
               avatar={
                 <Avatar
@@ -114,8 +114,10 @@ const Profile = () => {
               <div className="infoContent">
                 <Typography>
                   <p style={{ color: "blue" }}>
-                    <img src={user} alt="...." /> &nbsp;{" "}
-                    <ModalContent>{userInfo?.followers} Followers</ModalContent>{" "}
+                    <img src={user} alt="...." /> &nbsp;&nbsp;
+                    <ModalContent>
+                      {userInfo?.followers} Followers
+                    </ModalContent>{" "}
                     &emsp;{" "}
                     <p>
                       <img src={user} alt="...." /> &nbsp; {userInfo?.following}{" "}
@@ -133,8 +135,8 @@ const Profile = () => {
                 </Typography>
                 <Typography>
                   {userInfo?.blog && (
-                    <p>
-                      <img src={site} alt="...." /> &nbsp; {userInfo.blog}
+                    <p style={{ fontSize: "12px" }}>
+                      <img src={site} alt="...." /> &nbsp;&nbsp; {userInfo.blog}
                     </p>
                   )}
                 </Typography>
