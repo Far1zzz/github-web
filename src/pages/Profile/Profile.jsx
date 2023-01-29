@@ -85,7 +85,7 @@ const Profile = () => {
               Back
             </Button>
           </div>
-          <Card className="cardContent" sx={{ width: 500 }}>
+          <Card className="cardContent" sx={{ width: 350 }}>
             <CardHeader
               avatar={
                 <Avatar
