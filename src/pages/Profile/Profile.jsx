@@ -20,6 +20,8 @@ import site from "../../assets/site.svg";
 import github from "../../assets/github.svg";
 import Pagination from "../../components/Pagination/Pagination";
 import PaginationFalse from "../../components/Pagination/PaginationFalse";
+import ModalContent from "../../components/Modal/ModalContent";
+import { color } from "@mui/system";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -59,8 +61,6 @@ const Profile = () => {
             },
           }),
         ]);
-        console.log(response[0]);
-        console.log(response[1]);
         setUserInfo(response[0].data);
         setRepo(response[1].data);
       } catch (error) {
@@ -113,9 +113,10 @@ const Profile = () => {
               </Typography>
               <div className="infoContent">
                 <Typography>
-                  <p>
-                    <img src={user} alt="...." /> &nbsp; {userInfo?.followers}{" "}
-                    Followers &emsp;{" "}
+                  <p style={{ color: "blue" }}>
+                    <img src={user} alt="...." /> &nbsp;{" "}
+                    <ModalContent>{userInfo?.followers} Followers</ModalContent>{" "}
+                    &emsp;{" "}
                     <p>
                       <img src={user} alt="...." /> &nbsp; {userInfo?.following}{" "}
                       Following
